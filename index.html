@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="dist/util.js"></script>
+  <title>Util Demo</title>
+  <style>
+  #div1 {
+    width: 100px;
+    height: 100px;
+    background: #ccc;
+    transition: .5s;
+  }
+
+  #div1.active {
+    background: red;
+  }
+  </style>
+</head>
+<body>
+  <div id="div1"></div>
+
+  <script>
+  let el = easyUtils.getEl('#div1');
+  easyUtils.addEvent(el, 'click', () => {
+    // console.log('我被点击了')
+
+    easyUtils.toggleClass(el, 'active');
+  })
+
+  let fn = easyUtils.throttle(() => {
+    console.log(new Date());
+  }, 500);
+
+  easyUtils.addEvent(document, 'mousemove', () => {
+    fn();
+  });
+  </script>
+</body>
+</html>
