@@ -23,18 +23,18 @@
   <div id="div1"></div>
 
   <script>
-  let el = easyUtils.getEl('#div1');
-  easyUtils.addEvent(el, 'click', () => {
+  let el = latteUtils.getEl('#div1');
+  latteUtils.addEvent(el, 'click', () => {
     // console.log('我被点击了')
 
-    easyUtils.toggleClass(el, 'active');
+    latteUtils.toggleClass(el, 'active');
   })
 
-  let fn = easyUtils.throttle(() => {
+  let fn = latteUtils.throttle(() => {
     console.log(new Date());
   }, 500);
 
-  easyUtils.addEvent(document, 'mousemove', () => {
+  latteUtils.addEvent(document, 'mousemove', () => {
     fn();
   });
   </script>

@@ -1,4 +1,4 @@
-# easy-utils
+# latte-utils
 常用的工具函数
 
 ### 内容
@@ -23,14 +23,14 @@
 
 ### 在项目中安装
 ```bash
-npm install easy-utils --save
+npm install latte-utils --save
 # 或
-yarn add easy-utils
+yarn add latte-utils
 ```
 
 ### 使用
 ```js
-import util from 'easy-utils';
+import util from 'latte-utils';
 
 util.addEvent('#el', 'click', (event) => {
   console.log('我被点击了');

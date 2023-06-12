@@ -1,10 +1,10 @@
 {
-  "name": "easy-utils",
+  "name": "latte-utils",
   "version": "0.1.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lemonppai/easy-utils.git"
+    "url": "git+https://github.com/lemonppai/latte-utils.git"
   },
   "main": "dist/util.js",
   "scripts": {
